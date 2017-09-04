@@ -8,7 +8,7 @@ ENV gid 1000
 
 RUN useradd -m vlc && \
     apt-get update && \
-    apt-get install software-properties-common && \
+    apt-get install -y software-properties-common && \
     add-apt-repository ppa:videolan/master-daily && \
     apt-get update && \
     apt-get install -y vlc && \
